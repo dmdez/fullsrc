@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Simple-masonry by dmmendez</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="fullsrc.lite.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-fullsrc]').fullsrc();
+        });
+    </script>
+    <style>
+        h1, h2, h3 { margin: 0 0 1em; }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow: auto;
+            border-width: 0 0 0 1em;
+            border-style: solid;
+            border-color: #eee;
+            margin: 0 0 1em;
+            padding: 0 0 0 1em;
+        }
+        code { padding: 0; display: block; }
+        @media all and (min-width: 400px) and (max-width: 700px) {
+        }
+        @media all and (min-width: 701px) {
+        }
+        img { 
+            width: 100%; 
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <h1>fullsrc.js</h1>
+
+        <p>Include an image in your document with the following syntax:</p>
+
+        <pre>
+            <code>
+&lt;img src="../small/image-path" data-fullsrc="../full/image-path" width="800" alt="Some image..." /&gt;
+            </code>
+        </pre>
+
+        <p>
+            You will want to make sure your small image path is defined in the <em>src</em> attribute and your large image is defined in the <em>data-fullsrc</em> attribute.
+        </p>
+
+        <p>
+            <img src="photos/s/dog.jpg" data-fullsrc="photos/l/dog.jpg" alt="" />
+        </p>
+
+
+    </div>
+</body>
+</html>
